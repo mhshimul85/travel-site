@@ -1,3 +1,13 @@
 .btn{
   color: $white;
+
+  @mixin sm{
+    font-size: 1.3rem;
+    color: #ebebeb;
+  }
+
+  @mixin md {
+    font-size: 1.5rem;
+    color: #fff;
+  }
 }
