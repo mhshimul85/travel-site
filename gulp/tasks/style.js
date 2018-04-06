@@ -10,7 +10,7 @@ gulp.task('styles', function(){
     .pipe(postcss([cssImport, cssvars, nested, autoprefixer]))
     .on('error', function(errorInfo){
       console.log(errorInfo.toString());
-      this.emit(end);
-    });
+      this.emit('end');
+    })
     .pipe(gulp.dest('./app/temp/styles'));
 });

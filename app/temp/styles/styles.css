@@ -340,3 +340,15 @@ template {
 [hidden] {
   display: none;
 }
+
+img{
+  max-width: 100%;
+}
+
+a{
+  color: Gray;
+}
+
+.btn{
+  color: #FFFFFF;
+}
