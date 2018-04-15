@@ -1,13 +1,19 @@
-.btn{
+.btn {
+  background-color: $mainBlue;
+  color: #FFF;
   text-decoration: none;
-  color: #000;
-    &-large{
-      padding: 20px 30px;
-      border-radius: 5px;
-      transition: background 0.5s ease-in;
+  padding: .75rem 1.2rem;
+  display: inline-block;
+
+  &--orange {
+    background-color: $mainOrange;
+  }
+
+  &--large {
+    padding: 1.1rem 1.9rem;
+
+    @mixin atSmall {
+      font-size: 1.25rem;
     }
-}
-.btn:hover{
-  background: lime;
-  transition: background 0.5s ease-in;
+  }
 }
